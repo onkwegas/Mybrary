@@ -24,18 +24,12 @@
 <label>Page count</label>
     <input type="number" 
     name="pageCount" 
-    <% if(book.pageCount !== null) {%>
-        value="<%= book.pageCount %>"
-    <%} else {%>
-        value="1"
-    <%}%>
-    
-    min="1">
+    min="1"
+    value ="<%= book.pageCount !== null ? 1 : book.pageCount %>">
 </div>
 <div>
 <label>Cover</label>
-    <input type="file" 
-    name="cover">
+    <input type="file" name="cover" class="filepond">
 </div>
 <div>
 <label>description</label>
