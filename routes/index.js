@@ -14,6 +14,7 @@ router.get('/', async (req, res) => {
     }
     // console.log(books)
     res.render('index', { books: books})
+    
 })
 
 module.exports = router

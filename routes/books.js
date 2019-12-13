@@ -83,11 +83,9 @@ router.get('/new', async (req, res) => {
         })
         // res.redirect('books/${newBook.id}')
         res.redirect('books')
-        // if (book.coverImageName !== null){
-        //     removeBookCover(book.coverImageName)
-        // }        
+       
     }catch{
-         if(err) console.log(err)
+        //  if(err) console.log(err)
         renderNewPage(res, book, true)       
     }
 }) 
