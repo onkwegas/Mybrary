@@ -42,7 +42,7 @@ router.post('/', async (req, res)=>{
         })
     }
 }) 
-
+// GET AUTHOR & BOOKS BY AUTHOR
 router.get('/:id', async(req,res)=>{
     // res.send('Show Author ' + req.params.id)
     let books
@@ -63,7 +63,7 @@ router.get('/:id', async(req,res)=>{
         res.redirect('/')
     }
 })
-
+// EDIT AUTHOR SHOW
 router.get('/:id/edit', async(req,res)=>{
     // res.send('Edit Author '+ req.params.id)
     try{
@@ -74,7 +74,7 @@ router.get('/:id/edit', async(req,res)=>{
         res.redirect('/authors')
     }
 })
-
+// EDIT AUTHOR SAVE
 router.put('/:id',async (req,res)=>{
     let author
     try {
@@ -96,6 +96,7 @@ router.put('/:id',async (req,res)=>{
         }
     }
 })
+// DELETE AUTHOR
 router.delete('/:id', async (req,res)=>{
     let author
     try {        
